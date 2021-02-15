@@ -1,0 +1,168 @@
+
+<!dctype html>
+<html lang="en">
+<head>
+	<title>javascript class</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="banner-section">
+		<h1 id="banner"></h1>
+		<button type="button" onclick="Address()">Click Here</button>
+	</div>
+
+	<div class="calculator">
+		<input type="text" id="display">
+		<button type="button" onclick="one()">1</button>
+		<button type="button" onclick="two()">2</button>
+		<button type="button" onclick="three()">3</button>
+		<button type="button" onclick="four()">4</button>
+		<button type="button" onclick="five()">5</button>
+		<button type="button" onclick="six()">6</button>
+		<button type="button" onclick="seven()">7</button>
+		<button type="button" onclick="eight()">8</button>
+		<button type="button" onclick="nine()">9</button>
+		<button type="button" onclick="zero()">0</button>
+		<button type="button" onclick="plus()">+</button>
+		<button type="button" onclick="minas()">-</button>
+		<button type="button" onclick="cross()">*</button>
+		<button type="button" onclick="devid()">/</button>
+		<button type="button" onclick="clr()">c</button>
+		<button type="button" onclick="eqal()">=</button>
+	</div>
+
+
+	<div class="result-section">
+		<input type="number" id="marks">
+		<button type="button" onclick="result()"> Click to see your result</button>
+		<h1 id="imo"></h1>
+	</div>
+
+	<div class="multi-section">
+		<input type="" id="number">
+		<button type="button" onclick="online()">To see multipke table</button>
+		<h1 id="multi"></h1>
+	</div>
+
+
+
+
+
+
+
+
+	<script>
+		var Name="Ashamoni Sorna";
+		var Father_Name="Abutaleb";
+		var Mother_Name="Shodeda";
+		var Dist="Khakchile,sadar,Bramonbaria";
+		var Phone="01770745941";
+		var Email="ashamonisorna5@gmail.com";
+		var info="Name:"+Name+"<br>"+"Father Name:"+Father_Name+"<br>"+"Mother Name:"+Mother_Name+"<br>"+"Dist:"+Dist+"<br>"+"Phone:"+Phone+"<br>"+"Email:"+Email
+
+		function Address(){
+			document.getElementById('banner').innerHTML=info;
+		}
+
+
+		var show= document.getElementById('display');
+		function one(){
+			show.value +=1;
+		}
+		function two(){
+			show.value +=2;
+		}
+		function three(){
+			show.value +=3;
+		}
+		function four(){
+			show.value +=4;
+		}
+		function five(){
+			show.value +=5;
+		}
+		function six(){
+			show.value +=6;
+		}
+		function seven(){
+			show.value +=7;
+		}
+		function eight(){
+			show.value +=8;
+		}
+		function nine(){
+			show.value +=9;
+		}
+		function zero(){
+			show.value +=0;
+		}
+		function plus(){
+			show.value +="+";
+		}
+		function minas(){
+			show.value +="-";
+		}
+		function cross(){
+			show.value +="*";
+		}
+		function devid(){
+			show.value +="/";
+		}
+		function clr(){
+			show.value ="";
+		}
+		function eqal(){
+			show.value =eval(show.value);
+		}
+		
+
+
+		function result(){
+			var marks=document.getElementById('marks').value;
+			if (marks>100){
+				document.write("Enter a valid number")
+			}
+			 else if (marks>=80){
+				document.getElementById('imo').innerHTML="A+"
+			}
+			else if(marks>=70)
+				document.getElementById('imo').innerHTML="A"
+			
+			else if(marks>=60)
+				document.getElementById('imo').innerHTML="A-"
+			
+			else if(marks>=50)
+				document.getElementById('imo').innerHTML="B"
+			
+			else if(marks>=40)
+				document.getElementById('imo').innerHTML="C"
+			
+			else if(marks>=33)
+				document.getElementById('imo').innerHTML="D"
+			else {
+				document.getElementById('imo').innerHTML="Fail"
+			}
+		}
+
+		var a=10;
+		var i=1;
+		var b=null;
+
+
+
+		function online(){
+			var c=document.getElementById('number').value;
+			for(i;a>=i;i++){
+			 b=b+i+"x"+c+"="+i*c+"<br>"	
+			 document.getElementById('multi').innerHTML=b;
+			}
+		}
+
+
+
+
+
+	</script>
+</body>
+</html>

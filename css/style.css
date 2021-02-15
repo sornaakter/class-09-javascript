@@ -1,0 +1,73 @@
+.banner-section{
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+}
+.banner-section button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+}
+.calculator{
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.calculator input{
+    width: 100%;
+    padding: 25px;
+    background: #333;
+    color: #fff;
+}
+.calculator button{
+    width: 25%;
+    color: #fff;
+    background: #333;
+    font-size: 30px;
+    padding: 15px;
+    border: 3px solid black;
+    box-shadow: 0 0 0 #333;
+}
+.result-section{
+    width: 500px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.result-section input{
+    width: 100%;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+}
+.result-section button{
+    width: 100%;
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+}
+.multi-section{
+	  width: 500px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.multi-section input{
+	 width: 100%;
+    padding: 15px;
+    background: #333;
+    color: #fff;
+}
+.multi-section button{
+	 width: 100%;
+	 background: #333;
+	 color: #fff;
+	 font-size: 20px;
+}
